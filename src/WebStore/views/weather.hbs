@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>Links}}
+    <title>Weather App</title>
+</head>
+<body>
+    {{>Header}}
+  <div class="weather-container">
+      <div class="container weather-body mt-3">
+          <div class="input-group d-flex justify-content-center align-items-center">
+           <input type="text" placeholder="Your City Name..." id="basic-addon2"  class="input" >
+           <button class="butn" id="somButon"><span class="input-group-text searchBtn" id="basic-addon2">Search</span></button>
+          </div>
+      {{!-- <button>Search</button> --}}
+      <div class="weatherData" id="Data">
+          <h3 class="weather-heading visisble m-0" id="CitCou">City Name</h3>
+          <div class="output visible1" id="temp-result">
+              <p class="max" id="maxTemp">Max temperature</p>
+              <p class="min" id="minTemp">Min temperature</p>
+          </div>
+           <div class="Date visible" id="date">
+                  <p class="m-0" id="weath">day</p>
+                  <p class="m-0" id="wind">Date Show</p>
+              </div>
+      </div>
+  </div>
+  </div>
+  {{>Footer}}
+</body>
+</html>

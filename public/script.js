@@ -38,10 +38,10 @@ SearchBtn.addEventListener("click", () => {
           outputData.className = "weather-heading";
           outputData.innerText = response[0].name;
           tempResult.className = "output";
-          maxTemp.innerText = `${(response[0].main.temp_max - 273.15).toFixed(
+          maxTemp.innerText = `Max_Deg:${(response[0].main.temp_max - 273.15).toFixed(
             3
           )} C`;
-          minTemp.innerText = `${(response[0].main.temp_min - 273.15).toFixed(
+          minTemp.innerText = `Min_Deg:${(response[0].main.temp_min - 273.15).toFixed(
             3
           )} C`;
           outputDate.className = "Date";

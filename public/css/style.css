@@ -8,16 +8,20 @@ html{
   font-size: 62.50%;
 }
 a{
-  text-decoration: none;
+  color: white !important;
+   text-decoration: none;
   font-size: 1.8rem;
-  color: white;
   border-left: 2px solid white;
   border-right: 2px solid white;
   border-bottom: 2px solid white;
   border-top: white solid 2px;
-  padding: .5rem 1.2rem;
+  padding: .5rem 2rem;
   border-radius: 2px;
   transition: all .8s ease-in-out;
+}
+.navbar-nav .nav-link {
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 a:hover{
   border-top: transparent solid 2px;
@@ -69,7 +73,10 @@ button{
 .heading{
   font-size: 3rem;
   color: white;
-
+  border: none;
+}
+.heading:hover{
+border: none;
 }
 .dot{
   color: rgb(206, 206, 9);
@@ -204,6 +211,7 @@ button{
   border-radius: 4px;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.616);
   margin-bottom: 0;
+  /* justify-content: ; */
 }
 .visible{
   background-color: #2b2929;
@@ -248,4 +256,30 @@ opacity: 0;
   padding: 0;
   margin: 0;
   background-color: #323232;
+}
+
+
+.ul li{
+  margin-left: 1rem;
+}
+.navbar-nav{
+  display: flex;
+flex-direction: row;
+padding-left: 0;
+margin-bottom: 0;
+list-style: none;
+
+}
+
+@media (min-width:366px) {
+  html{
+    font-size: 50%;
+  }
+  .section-header{
+    margin-top: 2rem;
+  }
+  .ul li{
+    /* margin-top: 1rem; */
+    margin-left:1;
+  }
 }
